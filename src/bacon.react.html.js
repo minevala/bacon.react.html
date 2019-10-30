@@ -1,5 +1,5 @@
 import B, * as Base from "bacon.react.base"
-import Bacon from "baconjs"
+import * as Bacon from "baconjs"
 
 // Helpers
 
