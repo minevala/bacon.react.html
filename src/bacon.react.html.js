@@ -36,6 +36,7 @@ export const setProps = template => {
       dispose = Bacon.combineTemplate(template).subscribe(ev => {
         if (ev.hasValue()) {
           const template = ev.value()
+          //eslint-disable-next-line no-unused-vars
           for (const k in template)
             e[k] = template[k]
         } else if (ev.isError()) {
@@ -49,6 +50,7 @@ export const setProps = template => {
 }
 
 export const getProps = template => ({target}) => {
+  //eslint-disable-next-line no-unused-vars
   for (const k in template)
     template[k].set(target[k])
 }
